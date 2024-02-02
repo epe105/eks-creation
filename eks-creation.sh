@@ -12,3 +12,9 @@ eksctl create cluster \
 --node-type t2.medium \
 --nodes 2 \
 --vpc vpc-0031025de7e2b0a36 \
+
+eksctl delete cluster --name manny-eks2
+
+# update local context
+
+aws eks --region us-east-1 update-kubeconfig --name=education-eks-qNdvun3c
